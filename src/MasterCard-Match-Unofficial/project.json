@@ -1,0 +1,50 @@
+﻿{
+  "version": "1.1.4",
+  "authors": [ "PristineSource" ],
+  "title": "MasterCard's MATCH API SDK - Unofficial",
+  "description": "This is a duplication of MasterCard-Match, but has compatibility to .NET Core.",
+  "copyright": "Copyright 2016",
+  "language": "en-US",
+
+  "buildOptions": {},
+
+  "dependencies": {
+    "MasterCard-Core-Unofficial": "1.1.4"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50",
+      "dependencies": {
+        "NETStandard.Library": "1.6.0"
+      }
+    },
+    "net461": {
+      "dependencies": {}
+    }
+  },
+
+  "packOptions": {
+    "owners": [
+      "mastercardapi",
+      "PristineSource"
+    ],
+    "requireLicenseAcceptance": true,
+    "licenseUrl": "https://opensource.org/licenses/BSD-2-Clause",
+    "iconUrl": "",
+    "summary": "This is the Mastercard SDK for the service: MasterCard-Match",
+    "releaseNotes": "",
+    "tags": [ "MasterCard", "netcore", "net core", "api", "core", "match" ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/pristinesource/MasterCard-Match-Unofficial"
+    },
+    "projectUrl": "https://github.com/pristinesource/MasterCard-Match-Unofficial"
+  },
+
+  "scripts": {
+    "postcompile": [
+      "dotnet pack --no-build --configuration %compile:Configuration%"
+    ]
+  }
+}
