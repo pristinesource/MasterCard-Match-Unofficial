@@ -12,7 +12,7 @@
           "lib/net45-full/log4net.dll": {}
         }
       },
-      "MasterCard-Core-Unofficial/1.1.4": {
+      "MasterCard-Core-Unofficial/101.1.6": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging": "1.0.0",
@@ -23,6 +23,8 @@
           "System.Reflection.TypeExtensions": "4.1.0",
           "System.Runtime.Serialization.Formatters": "4.0.0-rc3-24212-01",
           "System.Security.Cryptography.Csp": "4.0.0",
+          "System.Xml.XDocument": "4.0.11",
+          "System.Xml.XmlDocument": "4.0.1",
           "log4net": "2.0.5"
         },
         "frameworkAssemblies": [
@@ -356,10 +358,35 @@
         "runtime": {
           "lib/net45/_._": {}
         }
+      },
+      "System.Xml.XDocument/4.0.11": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Xml.XmlDocument/4.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Xml.XmlDocument.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Xml.XmlDocument.dll": {}
+        }
       }
     },
     ".NETStandard,Version=v1.6": {
-      "MasterCard-Core-Unofficial/1.1.4": {
+      "MasterCard-Core-Unofficial/101.1.6": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging": "1.0.0",
@@ -371,7 +398,9 @@
           "System.Reflection.TypeExtensions": "4.1.0",
           "System.Runtime": "4.1.0",
           "System.Runtime.Serialization.Formatters": "4.0.0-rc3-24212-01",
-          "System.Security.Cryptography.Csp": "4.0.0"
+          "System.Security.Cryptography.Csp": "4.0.0",
+          "System.Xml.XDocument": "4.0.11",
+          "System.Xml.XmlDocument": "4.0.1"
         },
         "compile": {
           "lib/netstandard1.6/MasterCard-Core-Unofficial.dll": {}
@@ -1848,7 +1877,7 @@
           "System.Xml.ReaderWriter": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Xml.XmlDocument.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
@@ -1910,12 +1939,12 @@
         "log4net.nuspec"
       ]
     },
-    "MasterCard-Core-Unofficial/1.1.4": {
-      "sha512": "H+L7JFE1bMcLY0EjgmG9PnW1pcZjifHGDmnqeVdX7cuKqbXqKEzrMzsHzhOXxasTd7fIdDJ+VCzfONcMWrCr2A==",
+    "MasterCard-Core-Unofficial/101.1.6": {
+      "sha512": "0wwhoqkp4Rk1oh7Ex+tnh+DaH5dhMSL/HGxvt8bEwskmCKb41cxCem/5LhN6JZ0AUt5VrZvhM574qQA/zS5CUg==",
       "type": "package",
-      "path": "MasterCard-Core-Unofficial/1.1.4",
+      "path": "MasterCard-Core-Unofficial/101.1.6",
       "files": [
-        "MasterCard-Core-Unofficial.1.1.4.nupkg.sha512",
+        "MasterCard-Core-Unofficial.101.1.6.nupkg.sha512",
         "MasterCard-Core-Unofficial.nuspec",
         "lib/net461/MasterCard-Core-Unofficial.dll",
         "lib/netstandard1.6/MasterCard-Core-Unofficial.dll"
@@ -5734,7 +5763,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "MasterCard-Core-Unofficial >= 1.1.4"
+      "MasterCard-Core-Unofficial >= 101.1.6"
     ],
     ".NETFramework,Version=v4.6.1": [],
     ".NETStandard,Version=v1.6": [

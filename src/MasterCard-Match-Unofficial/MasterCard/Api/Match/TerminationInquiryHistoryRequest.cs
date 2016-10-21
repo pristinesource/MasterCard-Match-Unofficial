@@ -21,8 +21,8 @@ namespace MasterCard.Api.Match {
         /// </summary>
         /// <param name="criteria">containing the required parameters to read</param>
         /// <returns>TerminationInquiryHistoryRequest of the response.</returns>
-        public static ResourceList<TerminationInquiryHistoryRequest> Read( RequestMap criteria) {
-            return BaseObject.ExecuteForList("read", new TerminationInquiryHistoryRequest(criteria));
+        public static TerminationInquiryHistoryRequest Read( RequestMap criteria) {
+            return BaseObject.Execute("read", new TerminationInquiryHistoryRequest(criteria));
         }
 
         /// <summary>
@@ -30,8 +30,8 @@ namespace MasterCard.Api.Match {
         /// </summary>
         /// <param name="criteria">containing the required parameters to read</param>
         /// <returns>TerminationInquiryHistoryRequest of the response.</returns>
-        public static ResourceList<TerminationInquiryHistoryRequest> Read(IDictionary<string, object> criteria) {
-            return BaseObject.ExecuteForList("read", new TerminationInquiryHistoryRequest(criteria));
+        public static TerminationInquiryHistoryRequest Read(IDictionary<string, object> criteria) {
+            return BaseObject.Execute("read", new TerminationInquiryHistoryRequest(criteria));
         }
 
         protected override OperationConfig GetOperationConfig(string operationUUID) {
@@ -41,14 +41,17 @@ namespace MasterCard.Api.Match {
                     "read",
                     new List<string>() { "PageOffset", "PageLength", "AcquirerId" },
                     new List<string>()
-                );
+                ) {
+                  RepsonseType = DataType.Xml,
+                  RequestType = DataType.Xml
+                };
             }
 
             throw new Exception("Invalid operation supplied: " + operationUUID);
         }
 
         protected override OperationMetadata GetOperationMetadata() {
-            return new OperationMetadata("1.0.1", null);
+            return new OperationMetadata(VersionInfo.AssemblyVersion, null);
         }
     }
 }

@@ -27,7 +27,7 @@ namespace Test {
         public void TestExampleTerminationHistoryInquiry() {
 
             var map = new RequestMap();
-            map.Set("IRN", "19962016070500348");
+            map.Set("IRN", "19962016102100041");
             map.Set("AcquirerId", "1996");
             map.Set("PageOffset", "0");
             map.Set("PageLength", "10");
@@ -36,11 +36,7 @@ namespace Test {
             var response = TerminationInquiryHistoryRequest.Read(map);
             Assert.NotNull(response);
 
-            int c = 0;
-            foreach(var r in response) {
-                putResponse("example_termination_history_inquiry[" + c.ToString() + "]", r);
-                c++;
-            }
-        }
+            putResponse("example_termination_inquiry_history", response);
+       }
     }
 }

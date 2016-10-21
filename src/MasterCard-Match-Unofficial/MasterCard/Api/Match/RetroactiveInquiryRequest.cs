@@ -45,7 +45,7 @@ namespace MasterCard.Api.Match {
         }
 
         protected override OperationMetadata GetOperationMetadata() {
-            return new OperationMetadata("1.0.1", null);
+            return new OperationMetadata(VersionInfo.AssemblyVersion, null);
         }
 
     }
