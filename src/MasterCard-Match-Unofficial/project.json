@@ -1,5 +1,5 @@
 ﻿{
-  "version": "101.1.6",
+  "version": "101.1.7",
   "authors": [ "PristineSource" ],
   "title": "MasterCard's MATCH API SDK - Unofficial",
   "description": "This is a duplication of MasterCard-Match, but has compatibility to .NET Core.",
@@ -9,7 +9,7 @@
   "buildOptions": {},
 
   "dependencies": {
-    "MasterCard-Core-Unofficial": "101.1.6"
+    "MasterCard-Core-Unofficial": "101.1.7"
   },
 
   "frameworks": {
@@ -33,7 +33,7 @@
     "licenseUrl": "https://opensource.org/licenses/BSD-2-Clause",
     "iconUrl": "",
     "summary": "This is the Mastercard SDK for the service: MasterCard-Match",
-    "releaseNotes": "101.1.6 - Fixed TerminationInquiryHistoryRequest (To get the IRN use the TerminationInquiry​.Ref from TerminationInquiryRequest and parse it from the URL in that field.)",
+    "releaseNotes": "101.1.7 - Added requirement of MasterCard-Core-Unofficial.v101.1.7\n101.1.6 - Fixed TerminationInquiryHistoryRequest (To get the IRN use the TerminationInquiry​.Ref from TerminationInquiryRequest and parse it from the URL in that field.)",
     "tags": [ "MasterCard", "netcore", "net core", "api", "core", "match" ],
     "repository": {
       "type": "git",
