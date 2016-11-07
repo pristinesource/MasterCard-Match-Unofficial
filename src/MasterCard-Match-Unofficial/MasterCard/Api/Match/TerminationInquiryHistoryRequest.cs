@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MasterCard.Core.Model;
+using MasterCard_Core_Unofficial.MasterCard.Core;
 
 namespace MasterCard.Api.Match {
     public class TerminationInquiryHistoryRequest : BaseObject {
@@ -21,8 +22,8 @@ namespace MasterCard.Api.Match {
         /// </summary>
         /// <param name="criteria">containing the required parameters to read</param>
         /// <returns>TerminationInquiryHistoryRequest of the response.</returns>
-        public static TerminationInquiryHistoryRequest Read( RequestMap criteria) {
-            return BaseObject.Execute("read", new TerminationInquiryHistoryRequest(criteria));
+        public static TerminationInquiryHistoryRequest Read( RequestMap criteria, IndividualApiConfig apiConfig = null) {
+            return BaseObject.Execute("read", new TerminationInquiryHistoryRequest(criteria), apiConfig);
         }
 
         /// <summary>
@@ -30,8 +31,8 @@ namespace MasterCard.Api.Match {
         /// </summary>
         /// <param name="criteria">containing the required parameters to read</param>
         /// <returns>TerminationInquiryHistoryRequest of the response.</returns>
-        public static TerminationInquiryHistoryRequest Read(IDictionary<string, object> criteria) {
-            return BaseObject.Execute("read", new TerminationInquiryHistoryRequest(criteria));
+        public static TerminationInquiryHistoryRequest Read(IDictionary<string, object> criteria, IndividualApiConfig apiConfig = null) {
+            return BaseObject.Execute("read", new TerminationInquiryHistoryRequest(criteria), apiConfig);
         }
 
         protected override OperationConfig GetOperationConfig(string operationUUID) {

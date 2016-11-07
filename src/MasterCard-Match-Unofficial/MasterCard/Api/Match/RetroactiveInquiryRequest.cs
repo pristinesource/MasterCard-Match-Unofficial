@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MasterCard.Core.Model;
+using MasterCard_Core_Unofficial.MasterCard.Core;
 
 namespace MasterCard.Api.Match {
     public class RetroactiveInquiryRequest : BaseObject {
@@ -18,8 +19,8 @@ namespace MasterCard.Api.Match {
         /// </summary>
         /// <param name="map">containing the required parameters to create a new object</param>
         /// <returns>RetroactiveInquiryRequest of the response of created instance.</returns>
-        public static RetroactiveInquiryRequest create(RequestMap map) {
-            return BaseObject.Execute("create", new RetroactiveInquiryRequest(map));
+        public static RetroactiveInquiryRequest create(RequestMap map, IndividualApiConfig apiConfig = null) {
+            return BaseObject.Execute("create", new RetroactiveInquiryRequest(map), apiConfig);
         }
 
         /// <summary>
@@ -27,8 +28,8 @@ namespace MasterCard.Api.Match {
         /// </summary>
         /// <param name="map">containing the required parameters to create a new object</param>
         /// <returns>RetroactiveInquiryRequest of the response of created instance.</returns>
-        public static RetroactiveInquiryRequest create(IDictionary<string, object> map) {
-            return BaseObject.Execute("create", new RetroactiveInquiryRequest(map));
+        public static RetroactiveInquiryRequest create(IDictionary<string, object> map, IndividualApiConfig apiConfig = null) {
+            return BaseObject.Execute("create", new RetroactiveInquiryRequest(map), apiConfig);
         }
 
         protected override OperationConfig GetOperationConfig(string operationUUID) {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MasterCard.Core.Model;
+using MasterCard_Core_Unofficial.MasterCard.Core;
 
 namespace MasterCard.Api.Match {
     public class AcquirerContactRequest : BaseObject {
@@ -18,8 +19,8 @@ namespace MasterCard.Api.Match {
         /// </summary>
         /// <param name="map">containing the required parameters to create a new object</param>
         /// <returns>AcquirerContactRequest of the response of created instance.</returns>
-        public static AcquirerContactRequest Create(RequestMap map) {
-            return BaseObject.Execute("create", new AcquirerContactRequest(map));
+        public static AcquirerContactRequest Create(RequestMap map, IndividualApiConfig apiConfig = null) {
+            return BaseObject.Execute("create", new AcquirerContactRequest(map), apiConfig);
         }
 
         /// <summary>
@@ -27,8 +28,8 @@ namespace MasterCard.Api.Match {
         /// </summary>
         /// <param name="map">containing the required parameters to create a new object</param>
         /// <returns>AcquirerContactRequest of the response of created instance.</returns>
-        public static AcquirerContactRequest Create(IDictionary<string, object> map) {
-            return BaseObject.Execute("create", new AcquirerContactRequest(map));
+        public static AcquirerContactRequest Create(IDictionary<string, object> map, IndividualApiConfig apiConfig = null) {
+            return BaseObject.Execute("create", new AcquirerContactRequest(map), apiConfig);
         }
 
         protected override OperationConfig GetOperationConfig(string operationUUID) {

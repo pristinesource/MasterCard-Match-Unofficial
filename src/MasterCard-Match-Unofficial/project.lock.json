@@ -12,7 +12,7 @@
           "lib/net45-full/log4net.dll": {}
         }
       },
-      "MasterCard-Core-Unofficial/101.1.7": {
+      "MasterCard-Core-Unofficial/101.1.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging": "1.0.0",
@@ -386,7 +386,7 @@
       }
     },
     ".NETStandard,Version=v1.6": {
-      "MasterCard-Core-Unofficial/101.1.7": {
+      "MasterCard-Core-Unofficial/101.1.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging": "1.0.0",
@@ -1939,12 +1939,12 @@
         "log4net.nuspec"
       ]
     },
-    "MasterCard-Core-Unofficial/101.1.7": {
-      "sha512": "juZrRcn7VCup5FLCYMT4P/kzdsIoQNvM9tSitpCx3gT8fCKpbPgXbtpCgVWEcQwrIHgltxsyMAMpQTelFDMpoA==",
+    "MasterCard-Core-Unofficial/101.1.8": {
+      "sha512": "8cMwsyC3NcNibzIs9iGAvjNDh0W3+8CdnB2gCy9I+DgAy4IrbEHqQLnlP5N3xWXJyUbp5/r+UvcYwuAgXCGxVQ==",
       "type": "package",
-      "path": "MasterCard-Core-Unofficial/101.1.7",
+      "path": "MasterCard-Core-Unofficial/101.1.8",
       "files": [
-        "MasterCard-Core-Unofficial.101.1.7.nupkg.sha512",
+        "MasterCard-Core-Unofficial.101.1.8.nupkg.sha512",
         "MasterCard-Core-Unofficial.nuspec",
         "lib/net461/MasterCard-Core-Unofficial.dll",
         "lib/netstandard1.6/MasterCard-Core-Unofficial.dll"
@@ -5763,7 +5763,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "MasterCard-Core-Unofficial >= 101.1.7"
+      "MasterCard-Core-Unofficial >= 101.1.8"
     ],
     ".NETFramework,Version=v4.6.1": [],
     ".NETStandard,Version=v1.6": [
