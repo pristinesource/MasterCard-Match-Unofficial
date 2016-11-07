@@ -6,7 +6,7 @@
     "Newtonsoft.Json": "9.0.1",
     "NUnit": "3.4.1",
     "dotnet-test-nunit": "3.4.0-beta-2",
-    "MasterCard-Core-Unofficial": "101.1.8",
+    "MasterCard-Core-Unofficial": "101.1.9",
     "MasterCard-Match-Unofficial": {
       "target": "project"
     }
