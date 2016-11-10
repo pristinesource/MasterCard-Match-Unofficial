@@ -97,7 +97,7 @@
           }
         }
       },
-      "MasterCard-Core-Unofficial/101.1.9": {
+      "MasterCard-Core-Unofficial/101.1.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging": "1.0.0",
@@ -2858,11 +2858,11 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "MasterCard-Match-Unofficial/101.1.9": {
+      "MasterCard-Match-Unofficial/101.1.10": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.6",
         "dependencies": {
-          "MasterCard-Core-Unofficial": "101.1.9",
+          "MasterCard-Core-Unofficial": "101.1.10",
           "NETStandard.Library": "1.6.0"
         },
         "compile": {
@@ -2937,7 +2937,7 @@
           "runtimes/win7-x64/native/libuv.dll": {}
         }
       },
-      "MasterCard-Core-Unofficial/101.1.9": {
+      "MasterCard-Core-Unofficial/101.1.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging": "1.0.0",
@@ -6037,11 +6037,11 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "MasterCard-Match-Unofficial/101.1.9": {
+      "MasterCard-Match-Unofficial/101.1.10": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.6",
         "dependencies": {
-          "MasterCard-Core-Unofficial": "101.1.9",
+          "MasterCard-Core-Unofficial": "101.1.10",
           "NETStandard.Library": "1.6.0"
         },
         "compile": {
@@ -6086,7 +6086,7 @@
           "lib/net45-full/log4net.dll": {}
         }
       },
-      "MasterCard-Core-Unofficial/101.1.9": {
+      "MasterCard-Core-Unofficial/101.1.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging": "1.0.0",
@@ -6762,11 +6762,11 @@
           "lib/net46/System.Xml.XmlDocument.dll": {}
         }
       },
-      "MasterCard-Match-Unofficial/101.1.9": {
+      "MasterCard-Match-Unofficial/101.1.10": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.1",
         "dependencies": {
-          "MasterCard-Core-Unofficial": "101.1.9"
+          "MasterCard-Core-Unofficial": "101.1.10"
         },
         "compile": {
           "net461/MasterCard-Match-Unofficial.dll": {}
@@ -6810,7 +6810,7 @@
           "lib/net45-full/log4net.dll": {}
         }
       },
-      "MasterCard-Core-Unofficial/101.1.9": {
+      "MasterCard-Core-Unofficial/101.1.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging": "1.0.0",
@@ -7437,11 +7437,11 @@
           "lib/net46/System.Xml.XmlDocument.dll": {}
         }
       },
-      "MasterCard-Match-Unofficial/101.1.9": {
+      "MasterCard-Match-Unofficial/101.1.10": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.1",
         "dependencies": {
-          "MasterCard-Core-Unofficial": "101.1.9"
+          "MasterCard-Core-Unofficial": "101.1.10"
         },
         "compile": {
           "net461/MasterCard-Match-Unofficial.dll": {}
@@ -7560,12 +7560,12 @@
         "log4net.nuspec"
       ]
     },
-    "MasterCard-Core-Unofficial/101.1.9": {
-      "sha512": "C1hb1mA+HCRKyYJLDKqYbTfccJGGPF6yMQFksHMuczRF/lhxaa9mfjXPsNdqBN9L5/kUY0zsTVauHfDGFo/9EQ==",
+    "MasterCard-Core-Unofficial/101.1.10": {
+      "sha512": "YBSmykS/BdnbM5A1seZ8B/os9J/tpfS7PlSYG0fg3MEoyLPy8M1G3xBeAG/WJNWVvpx0jigTWhrM1kiUukgq0g==",
       "type": "package",
-      "path": "MasterCard-Core-Unofficial/101.1.9",
+      "path": "MasterCard-Core-Unofficial/101.1.10",
       "files": [
-        "MasterCard-Core-Unofficial.101.1.9.nupkg.sha512",
+        "MasterCard-Core-Unofficial.101.1.10.nupkg.sha512",
         "MasterCard-Core-Unofficial.nuspec",
         "lib/net461/MasterCard-Core-Unofficial.dll",
         "lib/netstandard1.6/MasterCard-Core-Unofficial.dll"
@@ -14900,7 +14900,7 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "MasterCard-Match-Unofficial/101.1.9": {
+    "MasterCard-Match-Unofficial/101.1.10": {
       "type": "project",
       "path": "../MasterCard-Match-Unofficial/project.json",
       "msbuildProject": "../MasterCard-Match-Unofficial/MasterCard-Match-Unofficial.xproj"
@@ -14908,7 +14908,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "MasterCard-Core-Unofficial >= 101.1.9",
+      "MasterCard-Core-Unofficial >= 101.1.10",
       "MasterCard-Match-Unofficial",
       "NUnit >= 3.4.1",
       "Newtonsoft.Json >= 9.0.1",
